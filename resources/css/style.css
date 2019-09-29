@@ -1,3 +1,12 @@
-h3{
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', Arial , sans-serif;
+    color: #555;
+    font-weight: 300;
+    font-size: 20px;
 }
