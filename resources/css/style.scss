@@ -129,6 +129,7 @@ section {
     padding: 1%;
 }
 
+
 /* ------------ PARAGRAPHS ---------------------------*/
 
 .long-copy{
@@ -215,5 +216,19 @@ header img{
     margin-left:10%;
 }
 
+/* ---------------------------------------------------- */
+/*                 favourite meals                      */
+/* ---------------------------------------------------- */
+
+.meals-showcase{
+    width: 100%;
+    list-style: none;
+}
+
+.meals-showcase li {
+    display: inline-block;
+    width: 25%;
+    
+}
 
 
