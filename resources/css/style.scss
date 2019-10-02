@@ -24,16 +24,45 @@ html {
 
 
 
+h1,h2,h3{
+    
+    text-transform: uppercase;
+    font-weight: 300;
+    
+    
+}
+
 h1{
     margin-top: 0px;
     margin-bottom: 10px;
     color:white;
     font-size: 200%;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1px;
     word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 170%;
+    word-spacing: 2px;
+    margin-bottom: 2%;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 8%;
+}
+
+
+h2::after{
+    display: block;
+    content: " ";
+    width: 10%;
+    height: 0.5%;
+    align-content: center;
+    margin: 2% auto;
+    margin-bottom: 2%;
+    background-color: #e67e22
 }
 
 /* ----------BUTTONS------------------------- */
@@ -73,7 +102,14 @@ h1{
 .button:hover,
 .button:active{
     background-color: #cf6d17;
-    border: 1px solid #cf6d17;
+    border-width: none;
+}
+
+.button-full:hover,
+.button-full:active{
+    
+    border: 1px solid #e67e22;
+    
 }
 
 .button-ghost:hover,
@@ -83,23 +119,74 @@ h1{
     border: 1px solid #cf6d17;
 }
 
+section {
+    margin : 8%;
+    text-align: center;
+}
+
+.box{
+    text-align: left;
+    padding: 1%;
+}
+
+/* ------------ PARAGRAPHS ---------------------------*/
+
+.long-copy{
+    line-height: 145%;
+    width : 70%;
+    margin: 0 15%;
+    margin-bottom: 5%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ------------ ICONS------ ---------------------------*/
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    margin-bottom: 10%;
+    color: #e67e22;
+}
+
 /* ------------ NAVIGATIONS ---------------------------*/
 
-
-li{
+.main-nav{
+    
+    position: absolute;
+    right:5%;
+    top:2%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+    // .button:hover{
+    //     color:blue;
+    //     border:none;
+    // }
+}
+.main-nav li{
     
     display: inline-block;
     margin-right: 5px;
 } 
 
- li a{
+.main-nav li a{
+    font-size: 90%;
+    text-transform: uppercase;
     position: relative;
     top: 15px;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
     color: white;
+    
 }
+
 
 /* ---------------------------------------------------- */
 /*                 HEADER                               */
@@ -111,6 +198,14 @@ header{
     height: 100vh;  
 }
 
+header img{
+    position: relative;
+    top: 15px;
+    float: left;
+    width: auto;
+    height: 100px;
+}
+
 .text-box-of-hero{
     position: absolute;
     width: 85%;
@@ -118,20 +213,6 @@ header{
     /* left: 50%;
     transform: translate(-50%,-50%); */
     margin-left:10%;
-}
-
-.main-nav{
-    
-    position: absolute;
-    right:5%;
-    top:10%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-    .button:hover{
-        border:none;
-    }
 }
 
 
