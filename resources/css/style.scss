@@ -9,6 +9,7 @@
     }
 
 html {
+    
     font-family: 'Lato', Arial , sans-serif;
     color: #555;
     font-weight: 300;
@@ -120,8 +121,9 @@ h2::after{
 }
 
 section {
-    margin : 8%;
+    
     text-align: center;
+    width: 100%;
 }
 
 .box{
@@ -136,7 +138,7 @@ section {
     line-height: 145%;
     width : 70%;
     margin: 0 15%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .box p{
@@ -193,10 +195,13 @@ section {
 /*                 HEADER                               */
 /* ---------------------------------------------------- */
 header{
+    margin-bottom: 8%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center; 
     height: 100vh;  
+    width : 100%;
+    background-attachment: fixed;
 }
 
 header img{
@@ -221,14 +226,272 @@ header img{
 /* ---------------------------------------------------- */
 
 .meals-showcase{
+    
     width: 100%;
     list-style: none;
-}
-
-.meals-showcase li {
-    display: inline-block;
-    width: 25%;
+    margin-bottom: 10%;
     
 }
 
+.meals-showcase li{
+    width: 25%;
+    display: block;
+    float: left;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
 
+.meal-photo img{
+    opacity: 0.7;
+    width:100%;
+    height: auto;
+    transform: scale(1.05);
+    transition: transform 0.5s, opacity 0.5s;
+    
+    
+}
+
+.meal-photo img:hover{
+    width : 100%;
+    transform: scale(1.0);
+    opacity: 1.0;
+}
+
+/* ---------------------------------------------------- */
+/*                 how it works                         */
+/* ---------------------------------------------------- */
+
+.sect-working{
+    padding-bottom: 8%;
+    background-color: #f4f4f4;
+}
+.working-demo{
+    
+    display:flex;
+}
+
+.working-item{
+    margin-top : 30px;
+    width: 49.2%;
+   
+}
+
+
+.working-item:first-child{
+    text-align: right;
+    width: 50%;
+    padding-right: 3%;
+}
+.working-item:last-child{
+    text-align: left;
+    margin-top: 10%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width : 40%;
+
+}
+
+.working-des{
+    margin-bottom: 50px;
+}
+
+.working-des .step-no{
+    color : #e67e22;
+    border : 2px solid #e67e22;
+    display: inline-block;
+    border-radius : 50%;
+    height : 55px;
+    width : 55px;
+    text-align: center;
+    padding : 8px;
+    float: left;
+    font-size : 150%;
+    margin-right: 25px;
+
+}
+
+.app-buttons img{
+    height: 50px;
+    width : auto;
+    margin-right: 10px;
+    margin-top : 20px;
+}
+// .working-des p,
+// .working-des span{
+//     text-align: left;
+    
+// }
+
+// .working-des p{
+//     padding-right: 10%;
+//     margin-bottom: 5%;
+//     line-height: 145%;
+//     word-spacing: 3px;
+// }
+
+// .working-des span{
+//     padding: 0px 40px 0px 4px;
+//     color: #e67e22;
+//     text-align: center;
+//     height: 55px;
+//     width: 60px;
+//     border: 2px solid #e67e22;
+//     border-radius: 50%;
+//     font-size : 140%;
+    
+// }
+
+/* ---------------------------------------------------- */
+/*                 cities                               */
+/* ---------------------------------------------------- */
+
+.sect-cities{
+    margin-top : 80px;
+    margin-bottom: 80px;
+}
+.sect-cities .row h2{
+    margin-bottom: 60px;
+    font-weight:500;
+}
+.cities-des{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width : 100%
+}
+.city:first-child{
+    margin-left: 2.5%;
+}
+.city{
+    
+    width : 23.8%;
+    padding : 1%;
+}
+
+.city img{
+    display: table;
+    text-align: center;
+    width : 80%;
+    margin : 0 auto;
+}
+
+.city figure figcaption{
+    margin: 0 auto 0 10%;
+    white-space: nowrap;
+    text-align: left;    
+    caption-side: bottom;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width : 70%;
+    font-size: 120%;
+    font-weight:400;
+}
+
+.icon-small{
+    padding-right: 7px;
+    font-size: 120%;
+    margin: 0 auto 10px 0;
+    color : #e67e22;
+}
+.city-feature{
+    text-align: left;
+    margin-left: 10%;
+
+}
+
+.city-feature a{
+    text-decoration: none;
+    color : #e67e22;
+    border-bottom : 1px solid #e67e22;
+}
+
+.city-feature .text{
+    margin : 0 auto;
+}
+
+.ion-fork{
+    padding-right: 8%
+}
+
+/* ---------------------------------------------------- */
+/*             customer testimonials                    */
+/* ---------------------------------------------------- */
+
+.sect-cus-test{
+    padding : 80px 0;
+    margin-bottom: 8%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-position: center; 
+     height: 85vh;  
+     width : 100%;
+    background-attachment: fixed;
+    
+}
+
+.sect-cus-test h2{
+    color : white;
+    padding : 0 0 30px 0;
+}
+
+.cust-voice{
+    padding: 0 4% 0 8%;
+    text-align: center;
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.customer{
+    position: relative;
+    font-weight: 100%;
+    font-size: 100%;
+    font-style: italic;
+    color : white;
+    line-height: 145%;
+    text-align: left;
+    margin : 0 5% 0 0;
+    width : 32.26%;
+}
+
+.customer::before{
+    position: absolute;
+    left : -7px;
+    top : -7px;
+    font-weight: 500;
+    font-size : 400%;
+    display : block;
+    content: "\201C";
+}
+
+.cust-id{
+    margin-top : 10px;
+    display : inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.cust-id img{
+    vertical-align: middle;
+    margin : 20px 10px 0 0;
+    width : 15%;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.cust-id i{
+    font-size : 100%;
+    vertical-align: middle;
+    padding : 5px 5px 0 0;
+}
