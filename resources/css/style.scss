@@ -603,11 +603,14 @@ input[type=text],
 input[type=email],
 select,
 textarea {
+    padding : 1px;
+    border: 1px solid rgb(165, 165, 165);
     border-radius: 3px;
     width: 100%;
 }
 
 input[type=checkbox]{
+    padding: 1px;
     border-radius: 3px;
     display: inline-block;
 }
@@ -625,7 +628,14 @@ footer{
 }
 
 footer div[class=row]:first-child{
+    display: flex;
+    flex-direction: row;
     margin: 0 5%;
+}
+
+footer div[class=row]:first-child .col:last-child{
+    margin-left: 0;
+    float: right;
 }
 
 .social-links{
