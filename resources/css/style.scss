@@ -221,6 +221,10 @@ header img{
     margin-left:10%;
 }
 
+.boxes{
+    margin-bottom: 15px;
+}
+
 /* ---------------------------------------------------- */
 /*                 favourite meals                      */
 /* ---------------------------------------------------- */
@@ -664,7 +668,7 @@ footer div[class=row]:first-child .col:last-child{
 .social-links li a:visited {
     color : #888;
     text-decoration: none;
-    padding-right: 5px;
+    padding-right: 10px;
     transition: color 0.2s;
     
 }
