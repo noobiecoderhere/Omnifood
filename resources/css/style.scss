@@ -160,7 +160,7 @@ section {
 .main-nav{
     
     position: absolute;
-    right:5%;
+    right:2%;
     top:2%;
     list-style-type: none;
     margin: 0;
@@ -219,6 +219,11 @@ header img{
     /* left: 50%;
     transform: translate(-50%,-50%); */
     margin-left:10%;
+}
+
+.text-box-of-hero div[class=row]:last-child{
+    display: flex;
+    flex-direction: row;
 }
 
 .boxes{
@@ -370,7 +375,7 @@ header img{
 }
 .sect-cities .row h2{
     margin-bottom: 60px;
-    font-weight:500;
+    
 }
 .cities-des{
     
@@ -430,7 +435,8 @@ header img{
 }
 
 .ion-fork{
-    padding-right: 8%
+    padding-right: 4%;
+    margin : 0 5px;
 }
 
 /* ---------------------------------------------------- */
@@ -591,7 +597,7 @@ header img{
 /*             forms                          */
 /* ---------------------------------------------------- */
 
-.user{
+.user form{
     width: 60% !important;
     margin : 0 auto;
 }
@@ -603,11 +609,15 @@ header img{
     margin-bottom: 10px;
 }
 
+.user form div[class=row]:nth-child(4) .span-2-of-3{
+    text-align: left;
+}
+
 input[type=text],
 input[type=email],
 select,
 textarea {
-    padding : 1px;
+    padding : 5px;
     border: 1px solid rgb(165, 165, 165);
     border-radius: 3px;
     width: 100%;
