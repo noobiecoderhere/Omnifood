@@ -71,6 +71,22 @@
     .sect-cities .row h2{
         margin-bottom: 40px;
     }
+
+    .city img{
+        margin-bottom: 5px;
+        width: 96%;
+    }
+
+    .city figure figcaption{
+        margin: 0 auto 10px 0;
+        width : 70%;
+        font-size: 110%;
+        
+    }
+
+    .city-feature{
+        font-size: 95%;
+    }
     
     .customer{
         margin: 0 2% 0 0;
@@ -100,11 +116,181 @@
 
 
 /* Small phones to small tabs of 481px to 767px */
-@media only screen and (max-width: 767px){
+@media only screen  and (max-width: 767px){
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+
+    .main-nav{
+        display: none;
+    }
     
+    .row{
+        padding: 0 4%;
+    }
+
+    .col{width: 100%;}
+
+    h2{
+        margin-bottom: 5%;
+    }
+
+    .long-copy{
+        width : 92%;
+        margin: 0 4%;
+    }
+
+    .icon-big{
+        
+        margin-bottom: 2%;
+    }
+
+    h3{
+        margin-bottom: 3%;
+    }
+
+    .icon-big,h3{
+        text-align: center;
+    }
+
+    .boxes .box:nth-child(3) h3{
+        margin-bottom: 3%;
+    }
+
+    .boxes p{
+        font-size: 100%;
+        text-align: justify;
+    }
+
+    .sect-working h2{
+        width: 90%;
+        padding-top: 5%;
+        margin: 0 5%;
+    }
+
+    .working-demo{
+    
+        display:flex;
+        flex-direction: column;
+    }
+
+    .working-item:first-child{
+        width: 70%;
+    }
+
+    .working-item:last-child{
+        width: 100%;
+
+    }
+
+    .working-des{
+        margin-bottom: 20px;
+    }
+
+    .sect-cities{
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .cities-des{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .city{
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .cities-des .city:first-child{
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .city figure figcaption{
+        margin: 0 auto;
+        font-size: 150%;
+        text-align: center;
+        
+    }
+
+    .city-feature{
+        font-size: 125%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .sect-cus-test{
+        padding: 40px 0 0px 0;
+    }
+
+    .sect-cus-test h2{
+        padding: 0;
+    }
+
+    .cust-voice{
+        
+        flex-direction: column;
+    }
+
+    .customer{
+        width: 100%;
+        padding: 0 1%;
+        margin-bottom:6%;
+    }
+
+    .customer::before{
+        display: none;
+    }
+
+    .cust-id img{
+        
+        margin : 0;
+        width : 10%;
+        
+        
+    }
+
+    .sect-sign-up{
+        padding: 30px 0;
+    }
+
+    .sign-up{
+        flex-direction: column;
+    }
+
+    .sect-sign-up h2{
+        padding:  0 0 5px 0;
+        margin-bottom: 2%;
+    }
+
+    .plans,.plan-des{
+        width: 100%;
+    }
+
+    .plans{
+        margin: 2% auto;
+    }
+
+    .user form{
+        width: 90% !important;
+        margin : 0 auto;
+    }
+
+    
+
 }
 
 /* Small phones of 0 to 480px */
 @media only screen and (max-width: 480px){
-    
+    .user form{
+        width: 100% !important;
+        margin : 0 auto;
+    }
 }
