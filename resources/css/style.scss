@@ -191,6 +191,64 @@ section {
     
 }
 
+.logo-white{
+    position: relative;
+    top: 15px;
+    float: left;
+    width: auto;
+    height: 100px;
+}
+
+.non-sticky .logo-black{
+    display: none;
+}
+
+
+
+/* ------------ STICKY NAVIGATIONS ---------------------------*/
+.sticky{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav{
+    right:1%;
+    top:1%;
+}
+
+.sticky .main-nav li a{
+    font-size: 80%;
+    text-transform: uppercase;
+    top: 10px;
+    color: black;
+    
+}
+
+.sticky .logo-white{
+    display: none;
+}
+
+.sticky .logo-black{ 
+    margin: 3px;
+    top: 7px;
+    float: left;
+    width: auto;
+    height: 60px;
+}
+
+
+.sticky .button:hover,
+.sticky .button:active{
+    background-color: #c0c0bd;
+    border-width: none;
+}
+
 
 /* ---------------------------------------------------- */
 /*                 HEADER                               */
@@ -205,13 +263,7 @@ header{
     background-attachment: fixed;
 }
 
-header img{
-    position: relative;
-    top: 15px;
-    float: left;
-    width: auto;
-    height: 100px;
-}
+
 
 .text-box-of-hero{
     position: absolute;
