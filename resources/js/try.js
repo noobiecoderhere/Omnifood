@@ -24,9 +24,10 @@
 // STICKY NAVIGATION USING jQUERY
 
 $(document).ready(function(){
+
+    //STICKY NAVIGATION
     
-    $('#js-sect-features').waypoint(function(direction){
-        console.log(1)  
+    $('#js-sect-features').waypoint(function(direction){ 
         if(direction == "down"){
             $('nav').removeClass('non-sticky');
             $('nav').addClass('sticky');
@@ -37,4 +38,56 @@ $(document).ready(function(){
     },{
         offset : '150px'
     });
+
+    // MOBILE NAVIGATION
+
+    $('.js-mobile-navicon').click(function(){
+        var nav = $('.js-main-nav')
+        var classname = $('nav').attr('class')
+        var icon = $('.js-mobile-navicon i')
+        nav.slideToggle(100)
+
+        if(icon.hasClass('ion-navicon-round')){
+            
+            $('.sticky').css('height','25%');
+            icon.removeClass('ion-navicon-round');
+            icon.addClass('ion-close-round');
+            
+        }else{
+            $('.sticky').css('height','10%')
+            icon.removeClass('ion-close-round')
+            icon.addClass('ion-navicon-round')
+            
+        }
+    });
+
+    // ANIMATIONS
+    
+    $('.js-fade-in-features').waypoint(function(direction){
+        
+        $('.js-fade-in-features').addClass('animated fadeIn');
+    },{
+        offset : '50%'
+    })
+
+    $('.js-fade-in-cities').waypoint(function(direction){
+        
+        $('.js-fade-in-cities').addClass('animated fadeIn');
+    },{
+        offset : '50%'
+    })
+
+    $('.js-fade-in-mobimg').waypoint(function(direction){
+        
+        $('.js-fade-in-mobimg').addClass('animated fadeInUp');
+    },{
+        offset : '50%'
+    })
+
+    $('.js-pulse-plan').waypoint(function(direction){
+        
+        $('.js-pulse-plan').addClass('animated pulse');
+    },{
+        offset : '50%'
+    })
 });

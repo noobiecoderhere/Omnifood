@@ -199,10 +199,29 @@ section {
     height: 100px;
 }
 
+
+
 .non-sticky .logo-black{
     display: none;
 }
 
+/* ------------ mobile NAVIGATIONS ---------------------------*/
+.non-sticky .mobile-navicon{
+    float:right;
+    cursor: pointer;
+    margin-top: 30px;
+    
+}
+
+.non-sticky .mobile-navicon i{
+    font-size: 200%;
+    color: white;
+    display: none;
+}
+
+.sticky .mobile-navicon {
+    display: none;
+}
 
 
 /* ------------ STICKY NAVIGATIONS ---------------------------*/
@@ -772,4 +791,21 @@ footer p{
     padding : 15px 0;
     color : rgb(170, 169, 169);
     text-align: center;
+}
+
+/* ---------------------------------------------------- */
+/*            animation                          */
+/* ---------------------------------------------------- */
+
+.js-fade-in-features,
+.js-fade-in-mobimg,
+.js-fade-in-cities{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js-fade-in-features.animated,
+.js-fade-in-mobimg.animated,
+.js-fade-in-cities.animated{
+    opacity: 1;
 }

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/Grid.css">
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="resources/css/style.scss">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/queries.css">
@@ -19,12 +20,13 @@
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo-white">
                 <img src="resources/img/logo.png" alt="Omnifood logo black" class="logo-black">
-                <ul class="main-nav">
-                    <li><a class="button" href="#">Food delivery</a></li>
-                    <li><a class="button" href="#">How it Works</a></li>
-                    <li><a class="button" href="#">Our cities</a></li>
-                    <li><a class="button" href="#">Sign up</a></li>
+                <ul class="main-nav js-main-nav">
+                    <li><a class="button" href="#js-sect-features">Food delivery</a></li>
+                    <li><a class="button" href="#working">How it Works</a></li>
+                    <li><a class="button" href="#cities">Our cities</a></li>
+                    <li><a class="button" href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-navicon js-mobile-navicon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="text-box-of-hero">
@@ -32,8 +34,8 @@
                 <h1>Goodbye junk food <br> Hello super healthy meals</h1>
             </div>
             <div class="row">
-                <a class="button button-full" href="#">I'm hungry</a>
-                <a class="button button-ghost" href="#">Show me more</a>
+                <a class="button button-full" href="#plans">I'm hungry</a>
+                <a class="button button-ghost" href="#js-sect-features">Show me more</a>
             </div>
         </div>
     </header>
@@ -46,7 +48,7 @@
                 cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row boxes">
+        <div class="row boxes js-fade-in-features">
             <div class="col span-1-of-4 box">
                 <i class="ion-calendar icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -120,14 +122,14 @@
             </li>
         </ul>
     </section>
-    <section class="sect-working">
-        <div class="row">
+    <section class="sect-working" >
+        <div class="row" id='working'>
             <h2>How it works - Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="working-demo">
                 <div class="working-item">
-                    <img src="resources/img/app-iPhone.png" alt="" class="app-screen">
+                    <img src="resources/img/app-iPhone.png" alt="" class="app-screen js-fade-in-mobimg">
                 </div>
                 <div class="working-item">
                     <div class="working-des">
@@ -151,11 +153,11 @@
         </div>
     </section>
 
-    <section class="sect-cities">
+    <section class="sect-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="cities-des">
+        <div class="cities-des js-fade-in-cities">
             <div class="city">
                 <figure>
                     <img src="resources/img/lisbon-3.jpg" alt="">
@@ -253,12 +255,12 @@
         </div>
     </section>
 
-    <section class="sect-sign-up">
+    <section class="sect-sign-up" id='plans'>
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="sign-up">
-            <div class="plans">
+            <div class="plans js-pulse-plan">
                 <div class="plan-des">
                     <div class="plan-des-details">
                         <div class="plan-name">PREMIUM</div>

@@ -8,6 +8,7 @@
     .row{
         padding : 0 2%;
     }
+
 }
 
 /* Small Tab  to Big Tab of 768px to 1023px */
@@ -38,6 +39,8 @@
     margin-right: 10px;
     padding: 13px 13px;
     }
+
+    
 
     .long-copy{
         line-height: 145%;
@@ -129,7 +132,82 @@
     .main-nav{
         display: none;
     }
+
     
+    .non-sticky .mobile-navicon i{
+        display: inline-block;
+    }
+
+    .main-nav{
+        float: left; 
+        /* display: none; */
+        margin-right: 40%;
+    }
+
+    .main-nav li{
+        display: block;
+        
+    }
+
+    .main-nav .button:link,
+    .main-nav .button:visited{
+        padding: 10px 0;
+    }
+
+    .main-nav .button:hover,
+    .main-nav .button:active{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .sticky{
+        height: 70px;
+    }
+
+    .sticky .main-nav{
+        right:1%;
+        top:1%;
+    }
+    
+    .sticky .main-nav li a{
+        font-size: 80%;
+        text-transform: uppercase;
+        top: 10px;
+        color: black;
+        
+    }
+    
+    .sticky .logo-white{
+        display: none;
+    }
+    
+    .sticky .logo-black{ 
+        margin: 3px;
+        top: 7px;
+        float: left;
+        width: auto;
+        height: 60px;
+    }
+    
+    
+    .sticky .button:hover,
+    .sticky .button:active{
+        background-color: rgba(0, 0, 0, 0);
+        
+    }
+
+    .sticky .mobile-navicon{
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        margin-top: 10px;
+        
+    }
+
+    .sticky .mobile-navicon i{
+        font-size: 200%;
+        color: black;
+    }
+
     .row{
         padding: 0 4%;
     }
