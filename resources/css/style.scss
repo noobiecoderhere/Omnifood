@@ -234,6 +234,11 @@ section {
     background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
+    transition: height 0.1s;
+    -webkit-transition: height 0.1s;
+    -moz-transition: height 0.1s;
+    -ms-transition: height 0.1s;
+    -o-transition: height 0.1s;
 }
 
 .sticky .main-nav{
