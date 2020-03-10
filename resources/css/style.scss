@@ -9,13 +9,18 @@
     }
 
 html {
-    
+    height: 100%;
     font-family: 'Lato', Arial , sans-serif;
     color: #555;
     font-weight: 300;
     font-size: 20px;
     overflow-x: hidden;
 }
+
+body{
+    height: 100%;
+}
+
 /* ---------------------------------------------------- */
 /*               REUSABLE COMPONENTS                    */
 /* ---------------------------------------------------- */
@@ -635,7 +640,7 @@ header{
 .per-meal{
     
     width : 100%;
-    margin: 10px 0 0px 0;
+    margin: 10px 0 0 0;
     
 }
 .plan-des-details{
@@ -761,7 +766,7 @@ footer div[class=row]:first-child .col:last-child{
 }
 
 .social-links li:last-child{
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .footer-nav li a:hover,
